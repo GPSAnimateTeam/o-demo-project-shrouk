@@ -6,7 +6,7 @@ Here you will find the basic guidelines for how the team should work consistentl
 
 ---
 
-## 🚀 Getting Started tesssssst
+## 🚀 Getting Started tesssssst shrouk
  1. Clone the repository:
 
    git clone https://github.com/GPSAnimateTeam/animate-project-template
