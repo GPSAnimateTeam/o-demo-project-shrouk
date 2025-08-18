@@ -2,7 +2,9 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-lib.ssMetadata = [];
+lib.ssMetadata = [
+		{name:"index_atlas_1", frames: [[0,0,921,115]]}
+];
 
 
 (lib.AnMovieClip = function(){
@@ -22,6 +24,13 @@ lib.ssMetadata = [];
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
+
+
+
+(lib.CachedBmp_992 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
 
 
 
@@ -57,10 +66,23 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// Layer_1
+	this.text = new cjs.Text("test git for shrouk branch", "28px 'Arial'", "#666666");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 33;
+	this.text.lineWidth = 413;
+	this.text.parent = this;
+	this.text.setTransform(512,269.8);
+
+	this.instance = new lib.CachedBmp_992();
+	this.instance.setTransform(282.05,259.65,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text}]}).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,0,0);
+p.nominalBounds = new cjs.Rectangle(794.1,547.7,-51.5,-230.50000000000006);
 // library properties:
 lib.properties = {
 	id: '4E34B3481A5ADC4C85D9016987E04AF9',
@@ -69,7 +91,9 @@ lib.properties = {
 	fps: 30,
 	color: "#FFFFFF",
 	opacity: 1.00,
-	manifest: [],
+	manifest: [
+		{src:"images/index_atlas_1.png?1755512675588", id:"index_atlas_1"}
+	],
 	preloads: []
 };
 
